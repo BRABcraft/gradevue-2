@@ -1,0 +1,23 @@
+const cors = require("cors");
+const express = require("express");
+const StudentVue = require('studentvue.js');
+
+const app = express();
+
+app.use(cors({ origin: "http://localhost:8000" }));
+app.use(express.json());
+
+app.post("/api", async (req, res) => {
+  const { district, username, password } = req.body;
+
+  try {
+    const client = await StudentVue.login(district, username, password);
+    const gradebook = await client.getGradebook();
+    res.json(gradebook);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({error: "Login failed"});
+  }
+});
+
+app.listen(3000);
