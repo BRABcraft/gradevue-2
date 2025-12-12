@@ -20,4 +20,4 @@ app.post("/api", async (req, res) => {
   }
 });
 
-app.listen(3000);
+app.listen(8080, "0.0.0.0");
