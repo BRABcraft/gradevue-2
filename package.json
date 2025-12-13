@@ -4,8 +4,4 @@
     "express": "^5.2.1",
     "studentvue.js": "^0.1.1"
   }
-  "scripts": {
-    "start": "node api/api.js"
-    "test": "node api/test.js"
-  }
 }

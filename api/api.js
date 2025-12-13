@@ -4,7 +4,7 @@ const StudentVue = require('studentvue.js');
 
 const app = express();
 
-app.use(cors({ origin: "https://gradevue-2-f6274.web.app/" }));
+app.use(cors({ origin: "https://gradevue-2-f6274.web.app" }));
 app.use(express.json());
 
 app.post("/api", async (req, res) => {
@@ -20,4 +20,4 @@ app.post("/api", async (req, res) => {
   }
 });
 
-app.listen(8080, "0.0.0.0");
+app.listen(3000);

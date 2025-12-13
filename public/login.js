@@ -1,6 +1,6 @@
 async function loginAndFetch()
 {
-  const response = await fetch("http://localhost:3000/api", {
+  const response = await fetch("https://honest-sloths-allow.loca.lt", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
