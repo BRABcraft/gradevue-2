@@ -1,16 +1,40 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta name = "GradeVue 2.0" content = "width=device-width, initial-scale=1.0"/>
-    <link rel = "stylesheet" href = "styles.css">
-  </head>
-  <body>
-    <h1 id = "title">Login</h1>
-    <div id = "loginui" >
-      <input id = "username" placeholder = "username" value = ""><br>
-      <input id = "password" placeholder = "password" value = ""><br>
-      <button onclick = "loginAndFetch()">Login</button>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <title>GradeVue 2</title>
+  <link rel = "stylesheet" href = "styles.css">
+</head>
+<body>
+  <header>
+    <div class = "container header-content">
+      <h1 id = "site-title">GradeVue 2</h1>
+      <p id = "site-tagline">Login to access your grades</p>
     </div>
-  </body>
-  <script src = "login.js"></script>
+  </header>
+
+  <main>
+    <section id = "login-section" class = "container">
+      <div class = "login-card">
+        <h2>Sign In</h2>
+        <input type = "text" id = "username" name = "username" required>
+        <input type = "password" id = "password" name = "password" required>
+        
+        <br>
+        <div class = "cta-buttons">
+          <a
+            class = "btn-primary"
+            onclick = "loginAndFetch()"
+          >Login</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id = "footer" >
+    <p>© 2025 Connor Rakov. Licensed under the GNU GPLv3.</p>
+  </footer>
+</body>
+<script src = "login.js"></script>
 </html>
