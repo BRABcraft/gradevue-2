@@ -155,3 +155,9 @@ async function loginAndFetch()
   const parsedData = JSON.parse(data);
   drawCourses(parsedData);
 }
+
+document.querySelector('#txtSearch').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+      loginAndFetch();
+    }
+});
