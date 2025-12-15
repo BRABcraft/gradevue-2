@@ -65,7 +65,7 @@ td {
 }
 
 .btn-primary:hover {
-  background: #af8d49;
+  background: #e4e4e4;
 }
 
 .features {
@@ -107,7 +107,7 @@ footer {
   text-align: center;
   padding: 1.2rem 0;
   font-size: 0.9rem;
-  color: #dfdfdf;
+  color: #2f2f4f;
   background: #c4c4c4;
   border-top: 1px solid #dfdfdf;
   border-bottom: 1px solid #dfdfdf;
@@ -133,13 +133,13 @@ footer {
 
 .login-card h2 {
   margin-bottom: 1.5rem;
-  color: #dfdfdf;
+  color: #2f2f4f;
 }
 
 .login-card label {
   text-align: left;
   font-weight: bold;
-  color: #dfdfdf;
+  color: #2f2f4f;
 }
 
 .login-card input {
